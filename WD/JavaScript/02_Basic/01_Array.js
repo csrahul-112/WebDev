@@ -27,12 +27,12 @@ const myArr = newArr.join(); //myArr is joined with array newArr and converted t
 
 
 //slice, splice
-console.log("A ", newArr);
+// console.log("A ", newArr);      //A  [ 1, 2, 3, 4, 5 ]
 
-const sliceArr = newArr.slice(1,3);
-console.log(sliceArr);
-console.log("B ", newArr);
+// const sliceArr = newArr.slice(1,3);
+// console.log(sliceArr);          //[ 2, 3 ]
+// console.log("B ", newArr);      //B  [ 1, 2, 3, 4, 5 ]
 
-const spliceArr = newArr.splice(1,3);
-console.log(spliceArr);
-console.log("C ", newArr);
+// const spliceArr = newArr.splice(1,3);
+// console.log(spliceArr);         //[ 2, 3, 4 ]
+// console.log("C ", newArr);      //C  [ 1, 5 ]
