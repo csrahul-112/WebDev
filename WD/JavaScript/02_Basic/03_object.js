@@ -17,19 +17,26 @@ const JsUser = {
 
 }
 
-console.log(JsUser.email);
-console.log(JsUser["email"]); //This is used and everyone should know because how full Name is declared and we can only access it this way
+// console.log(JsUser.email);
+// console.log(JsUser["email"]); //This is used and everyone should know because how full Name is declared and we can only access it this way
 
-console.log(JsUser[mySym]);
+// console.log(JsUser[mySym]);
 
-console.log(typeof JsUser[mySym]);//here the value in it is string but the mySym itself is a symbol;
+// console.log(typeof JsUser[mySym]);//here the value in it is string but the mySym itself is a symbol;
 
 JsUser.email = "Rk@yahoo.com";
-Object.freeze(JsUser);
+// Object.freeze(JsUser);
 JsUser.email = "Rk@yuyu.com";
 
-console.log(JsUser);
+// console.log(JsUser);
 
+JsUser.greeting = function(){
+    console.log("Hello JsUser");
+}
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS User, ${this.name}`);
+}
 
-
-
+// console.log(JsUser.greeting);   //[Function (anonymous)]
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
