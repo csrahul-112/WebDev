@@ -79,10 +79,6 @@ we got this output because this talks about the current context(Variables)
     chai()
  */
 
-
-
-
-
 let addTwo = (num1, num2) => {
     return num1 + num2;
 }
@@ -102,7 +98,7 @@ let addTwo = (num1, num2) => {
 
 // const fun1 = () => ({username: "Rahul"})
 
-// console.log(fun1());;
+// console.log(fun1());
 
 
 

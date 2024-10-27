@@ -2,7 +2,7 @@
 There are only two type of datatype based on how data is stored or accesed from the memory 
 1. Primitive   2. Non Primitive
 
-if copy of the data is passed for on some function instead of it's reference it's primitive
+if copy of the data is passed for some function instead of it's reference it's primitive
 if reference of the data itself is passed then it's non primitive
 
  */
@@ -15,7 +15,7 @@ console.log(typeof bigNUmber);
 
 const id = Symbol('123');
 const sno = Symbol('123');
-console.log(id === sno);
+console.log(id == sno);  //== & === give same false as every symbol is unique
 
 
 //Non primitive / Reference Type

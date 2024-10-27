@@ -9,7 +9,7 @@ console.log("Rahul") // code runs fine but not a good practice
 
 //number = 2 to the power 52/53
 //bigint -> to store big numbers
-// string = "Anyting inside double or single qoutes"
+//string = "Anyting inside double or single qoutes"
 //boolean = true / false
 //null = standalone value
 // undefined = value not assignede yet

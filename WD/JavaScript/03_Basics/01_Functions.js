@@ -38,7 +38,7 @@ function calculatePrice(num1){
 }
 
 // console.log(calculatePrice(200));            // 200
-// console.log(calculatePrice(200, 300, 400));  // still output 200 baki values gayi we can take them as input cause we only have one parameter in function so to take multiple input we use rest(...) operator (this is also the spread oerator just their use define whether it's rest or spread) it takes multiple input and return an array of all values in this case
+// console.log(calculatePrice(200, 300, 400));  // still output 200 baki values gayi we can take them as input cause we only have one parameter in function so to take multiple input we use rest(...) operator (this is also the spread oerator, just their use define whether it's rest or spread) it takes multiple input and return an array of all values in this case
 
 function calculatePriceTwo(...num2){
     return num2;

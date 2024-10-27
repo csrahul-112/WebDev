@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body id = "bg-black">
+    <!--
+        DOM: DOM is Document Object Model it tells us about what is the model of our object which is basically when our webpage is created it is created by object of HTML so it just tell about that
+
+        To know more about that we will dive into any live webpage to do that we can do console.log(window) it gives us everything that the window stores on the webpage but we need to read about document so we can also do console.log(document) and for whole document we can write console.dir(document)
+
+        document.getElementByID() => to select any element by some id 
+        document.getElementById("SomeID").id => here by id we can target some element with that id and in same way if we are getting a class in return we can target it by "className" not "class" as in backend it's written like this it will be helpfull in react etc 
+
+        we can also access attributes by doc.getElementById().getAttribute() also we can user setAttribute
+
+
+        ###### INTERESANTE start hone WALA hai ######
+        innnerText : returns only the visible text on the screen
+        innerHTML : return all text content inside the id including all html
+        textContent returns all text even those text which is hidden by style
+        
+        quesry Selector : we can use document.querySelector or qSAll to select any element by id, class, input tag or element itself.
+        there are other selectors as well like querySelectorAll(it returns a node list)
+
+        On NodeList we have some prototypes and forEach loop so we can handle it good without converting But can't do the same for HTMLcollection
+
+        if we are getting values by getElementByClassName we get aHTML collection we don't have so many prototypes for this we can use so to access it's element we may convert it to array first
+
+    -->
+    
+    <div>
+        <h1 id="title"> Learning JS(DOM) </h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2 id="heading2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, vitae?</h2>
+        <h2 id="heading2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, vitae?</h2>
+        <h2 id="heading2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, vitae?</h2>
+
+        <input type="password" name="password" id="test">
+    </div>
+
+
+</body>
+</html>

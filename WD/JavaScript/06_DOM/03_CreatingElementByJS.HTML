@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating HTML Element with JS</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.classNme = "main"
+    div.id = Math.round((Math.random() * 10) +1) //ese hi kr diya thoda fun with methods aur kuch nhi wese actual me div.id = "idToBeGiven" ese hi hota hai
+    div.setAttribute("title", "generated title");
+    div.style.backgroundColor = "red";
+    div.style.color = "White";
+    //this div which we have created is not visible on the webpage because we haven't attached this child throuh the document it's just in memory
+
+    //Special note of optimization: the way of setting attributes like div.id, div.innerText these first bring the reference of the attributed from NodeList and then set them(making it a round trip) but the method div.setAttribute directy set it saving (one way trip) so it is preffered 
+    // div.innerText = "kuch likha hi nhi tha div me abhi tk "
+    const addText = document.createTextNode("New Text Node");
+    div.appendChild(addText);
+
+    // So finally lets attach the div with document
+    document.body.appendChild(div);
+</script>
+</html>
